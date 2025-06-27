@@ -1,5 +1,5 @@
 function data_management() {
-    console.clear();
+    console.clear();//this is for when the console stay too full(clear the console)
     console.log('Data management');
 
     window.products = {
@@ -11,9 +11,8 @@ function data_management() {
     window.setProducts = new Set(Object.values(products).map(p => p.name));
 
     window.mapProducts = new Map([
-        ['Electronic', 'laptop'],
-        ['Accessory', 'mouse'],
-        ['Accessory', 'keyboard']
+        ['Electronic', ['laptop']],
+        ['Accessory', ['mouse','keyboard']]
     ]);
 
     renderData();
