@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data management</h1>
+
+        <section id="product-object">
+            <h2>products (Object)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th><th>Name</th><th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody"></tbody>
+            </table>
+        </section>
+
+        <section id="product-set">
+            <h2>Unique products (Set)</h2>
+            <ul id="uniqueProductsList"></ul>
+        </section>
+
+        <section id="product-map">
+            <h2>Categories and products (Map)</h2>
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Product</th></tr>
+                </thead>
+                <tbody id="mapTableBody"></tbody>
+            </table>
+        </section>
+        <button onclick="data_management">Execute on console</button>
+    </div>
+
+
+    <script src="data_management.js"></script>
+</body>
+</html>
